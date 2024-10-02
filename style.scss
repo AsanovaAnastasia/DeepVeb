@@ -239,6 +239,7 @@ summary::-webkit-details-marker {
     }
 }
 
+
 .sort {
     background: none;
     display: flex;
@@ -251,8 +252,10 @@ summary::-webkit-details-marker {
     &__filter {
         font-weight: 600;
         font-size: 14px;
-        color: #ef5b70;
+        color: $blackTextColor;
         padding-right: 304px;
+
+    
     }
 
     &__box-leftside {
@@ -283,10 +286,7 @@ summary::-webkit-details-marker {
             color: #6f6e6e;
         }
 
-        .open {
-            color: #ef5b70;
-
-        }
+        
 
         &_Category {
             padding-left: 10px;
@@ -320,6 +320,7 @@ summary::-webkit-details-marker {
         width: 79px;
         @include flex-column;
         gap: 6px;
+        
     }
 
 }

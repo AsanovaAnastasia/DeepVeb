@@ -214,7 +214,7 @@ summary::-webkit-details-marker {
 .sort__filter {
   font-weight: 600;
   font-size: 14px;
-  color: #ef5b70;
+  color: #000;
   padding-right: 304px;
 }
 .sort__box-leftside {
@@ -243,9 +243,6 @@ summary::-webkit-details-marker {
   justify-content: start;
   align-items: center;
   color: #6f6e6e;
-}
-.sort__box-leftside .open {
-  color: #ef5b70;
 }
 .sort__box-leftside_Category {
   padding-left: 10px;
