@@ -331,7 +331,11 @@ a {
 .catalogSection__Card {
   font-family: var(--font-family);
   font-weight: 400;
-  background: #f8f8f8;
+  display: block;
+  position: relative;
+  background-color: #f8f8f8;
+  width: 360px;
+  height: 581px;
 }
 .catalogSection__card-darkness {
   display: none;

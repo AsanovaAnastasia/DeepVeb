@@ -364,8 +364,11 @@ a {
     &__Card {
         font-family: var(--font-family);
         font-weight: 400;
-        background: #f8f8f8;
+        display: block;
         position: relative;
+        background-color: $cardBgColor;
+        width: 360px;
+        height: 581px;
     }
 
     &__card-darkness {
@@ -381,11 +384,10 @@ a {
         top: 0;
         right: 0;
         bottom: 0;
-        left: 0;
-    }
+        left: 0;    }
 
     &__card-darkness button {
-        @include flex-center();
+        @include flex-center;
         flex-direction: row;
         color: $whiteTextColor;
         background: rgba(58, 56, 56, 0.86);
@@ -393,11 +395,11 @@ a {
         font-size: 14px;
         border: 1px solid $whiteTextColor;
         gap: 11px;
-        padding: 13px;
-    }
+        padding: 13px;    }
 
     &__Card:hover &__card-darkness {
         display: flex;
+    
     }
 
     &__card-text {
