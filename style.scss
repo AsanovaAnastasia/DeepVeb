@@ -205,7 +205,7 @@ summary::-webkit-details-marker {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 17px;
+        line-height: 14px;
         text-decoration: none;
         color: #636363;
 
@@ -255,7 +255,7 @@ summary::-webkit-details-marker {
         color: $blackTextColor;
         padding-right: 304px;
 
-    
+
     }
 
     &__box-leftside {
@@ -286,7 +286,7 @@ summary::-webkit-details-marker {
             color: #6f6e6e;
         }
 
-        
+
 
         &_Category {
             padding-left: 10px;
@@ -320,7 +320,7 @@ summary::-webkit-details-marker {
         width: 79px;
         @include flex-column;
         gap: 6px;
-        
+
     }
 
 }
@@ -609,5 +609,439 @@ summary::-webkit-details-marker {
 
     &__icon:hover path {
         fill: $whiteTextColor;
+    }
+}
+
+@media (max-width: 1600px) and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .menu {
+        width: 768px;
+        padding: 18px;
+
+        &__left-menu {
+            margin-left: 32px;
+        }
+
+        &__right-menu {
+            margin-right: 18px;
+        }
+
+        &__five-in-basket {
+            right: 37px;
+        }
+    }
+
+    .BreadCrumb {
+        width: 768px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 60px 16px;
+
+
+        &__menu-active {
+            width: 150px;
+        }
+
+        &__menu-active__all {
+            padding-top: 8px;
+        }
+
+        &__menu-heading {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+
+        &__menu-man {
+            height: 90px;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        &__menu-text {
+            font-size: 12px;
+        }
+
+        &__menu-list {
+            font-size: 10px;
+            display: flex;
+            gap: 5px;
+        }
+
+        &__menu-woman {
+            height: 100px;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        &__menu-kids {
+            height: 120px;
+            display: flex;
+            gap: 5px;
+        }
+    }
+
+
+    .sort {
+        &__left-side {
+            padding-left: 16px;
+            padding-top: 24px;
+        }
+
+        &__filter {
+            padding-right: 340px;
+
+            svg path {
+                fill: black;
+            }
+        }
+
+        &__right-side {
+            padding-top: 24px;
+            padding-bottom: 40px;
+        }
+    }
+
+    .catalog {
+        width: 768px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .item {
+        &_hide {
+            display: none;
+        }
+
+        &__card-text {
+            @include flex-column;
+            gap: 15px;
+        }
+    }
+
+    .pages-count {
+        margin-bottom: 63px;
+    }
+
+    .offer-section {
+        width: 768px;
+        height: 610px;
+        @include flex-center();
+        flex-wrap: wrap;
+        gap: 42px;
+
+        &__card {
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    .form-section {
+        width: 768px;
+        height: 614px;
+
+
+        &__form-darkness {
+            width: 768px;
+            height: 614px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 48px;
+            padding: 64px 105px;
+        }
+
+        &__right-side {
+            height: 137px;
+            display: flex;
+            gap: 27px;
+        }
+
+        &__right-side h1 {
+            line-height: 162%;
+        }
+    }
+
+    .footer {
+        width: 768px;
+        padding: 30px 32px;
+
+
+        &__left-side {
+            width: 251px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+
+    .menu {
+        width: 375px;
+        padding: 18px 16px;
+
+        &__hide-button {
+            display: none;
+        }
+
+        &__hide-button svg {
+            display: none;
+        }
+
+        &__left-menu {
+            margin-left: 0;
+            gap: 0;
+        }
+
+        &__right-menu {
+            margin-right: 0;
+            width: 32px;
+        }
+
+        &__five-in-basket {
+            display: none;
+        }
+    }
+
+    .BreadCrumb {
+        display: grid;
+        padding: 24px 83px;
+
+        &__menu-active {
+            width: 180px;
+        }
+
+        &__menu-active__all {
+            padding-top: 8px;
+        }
+
+        &__menu-heading {
+            margin-bottom: 8px;
+            font-size: 10px;
+        }
+
+        &__menu-man {
+            height: 60px;
+            display: flex;
+            gap: 3px;
+            margin-bottom: 5;
+        }
+
+        &__menu-text {
+            font-size: 10px;
+        }
+
+        &__menu-list {
+            font-size: 10px;
+            display: flex;
+            gap: 3px;
+        }
+
+        &__menu-woman {
+            height: 90px;
+            display: flex;
+            gap: 3px;
+            margin-bottom: 5px;
+        }
+
+        &__menu-kids {
+            height: 110px;
+            display: flex;
+            gap: 3px;
+        }
+
+        &__heading {
+            display: block;
+            padding-left: 19px;
+            padding-bottom: 0;
+        }
+
+        &__links {
+            width: 209px;
+        }
+
+        &__link {
+            font-weight: 300;
+
+        }
+
+
+        &__box:not(:last-child)::after {
+            content: '/';
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    }
+
+    .sort {
+        &__left-side {
+            padding-left: 8px;
+            padding-top: 24px;
+        }
+
+        &__hide {
+            display: none;
+        }
+
+        &__filter {
+
+            padding-right: 61px;
+
+            svg path {
+                fill: black;
+                width: 37px;
+                height: 25px;
+            }
+        }
+
+        &__box-leftside {
+            padding-top: 8px;
+            width: 200px;
+            gap: 6px;
+            padding: 18px;
+
+            &_Heading {
+                width: 170px;
+                height: 25px;
+                border-left: 3px solid #ef5b70;
+                padding-left: 8px;
+                color: #000;
+            }
+        }
+
+        &__right-side {
+            display: flex;
+            padding-top: 24px;
+            padding-bottom: 40px;
+            gap: 24px;
+        }
+
+        &__details {
+            font-weight: 400;
+            font-size: 12px;
+            color: #6f6e6e;
+            padding-right: 8px;
+        }
+
+        &__box-rightside {
+            padding-right: 15px;
+            padding-bottom: 3px;
+            width: 60px;
+            @include flex-column;
+            display: 4px;
+        }
+    }
+
+    .catalog {
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 375px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .pages-count {
+        margin-bottom: 64px;
+    }
+
+    .offer-section {
+        width: 375px;
+        height: 610px;
+        @include flex-center();
+        flex-wrap: wrap;
+        padding: 48px 13px;
+        gap: 46px;
+
+        &__card {
+            width: 347px;
+            @include flex-column();
+            gap: 14px;
+        }
+    }
+
+
+
+    .form-section {
+        width: 375px;
+        height: 550px;
+
+        &__form-darkness {
+            width: 375px;
+            height: 550px;
+            @include flex-center();
+            flex-wrap: wrap;
+            gap: 59px;
+            padding: 64px 17px;
+            background-size: cover;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fbfbfb;
+        }
+
+        &__left-side {
+            width: 343px;
+            height: 194px;
+            display: flex;
+            gap: 29px;
+        }
+
+        &__left-side p {
+            font-size: 18px;
+        }
+
+        &__right-side {
+            width: 343px;
+            height: 124px;
+            @include flex-column();
+            justify-content: center;
+            gap: 22px;
+        }
+
+        &__right-side h1 {
+            line-height: 153%;
+        }
+
+        &__right-side h2 {
+            font-size: 14px;
+        }
+
+        &__form input {
+            height: 47px;
+        }
+
+        &__form button {
+            height: 47px;
+        }
+    }
+
+    .footer {
+        width: 375px;
+        height: 143px;
+        @include flex-center();
+        flex-wrap: wrap-reverse;
+        padding: 43px 62px 9px;
+        gap: 40px;
+
+        &__left-side {
+            width: 251px;
+            height: 19px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        &__right-side {
+            width: 147px;
+        }
     }
 }
