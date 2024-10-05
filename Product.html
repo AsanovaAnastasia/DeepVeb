@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title> Document </title>
 </head>
@@ -112,7 +116,6 @@
                 Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize
                 parallel core competencies rather than exceptional portals. </p>
             <h1 class="description__price">$561</h1>
-            <svg width="642" height="1" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M642-.005H0v1.008h642V-.005Z" fill="#EF5B70"/><path d="M.5.498h641H.5Z" stroke="#EAEAEA" stroke-linejoin="round"/></svg>
             <div class="description__sort">
                 <details class="description__details">
                     <summary>CHOOSE COLOR <svg width="11" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,8 +139,7 @@
                         </svg> </summary>
                 </details>
             </div>
-            <button class="description__button"><svg width="32" height="27"
-                    xmlns="http://www.w3.org/2000/svg">
+            <button class="description__button"><svg width="32" height="27" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M26.2 29a2.477 2.477 0 1 1 .201 0h-.2ZM6.754 26.32a2.68 2.68 0 1 1 5.364 0 2.68 2.68 0 0 1-5.366 0h.002Zm3.8-5.634a1.184 1.184 0 0 1-1.145-.867L4.575 2.364H1.182a1.182 1.182 0 0 1 0-2.364h4.281a1.183 1.183 0 0 1 1.144.868l4.833 17.455h13.178L29 8.275h-14.6a1.183 1.183 0 1 1 0-2.365h16.413a1.178 1.178 0 0 1 .986.533 1.191 1.191 0 0 1 .1 1.122l-5.405 12.412a1.185 1.185 0 0 1-1.084.709H10.553Z" />
                 </svg> Add to Cart </button>
@@ -163,8 +165,9 @@
                 <h2 class="catalogSection__price">$52.00</h2>
             </div>
         </div>
-        <div class="catalogSection__Card"><img src="./img/img3.webp" alt="Photo">
-            <div class="catalogSection__card-darkness">
+        <div class="catalogSection__Card catalogSection__hide-mobile">
+            <img src="./img/img3.webp" alt="Photo">
+            <div class="catalogSection__card-darkness ">
                 <button><svg width="32" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M26.2 29a2.477 2.477 0 1 1 .201 0h-.2ZM6.754 26.32a2.68 2.68 0 1 1 5.364 0 2.68 2.68 0 0 1-5.366 0h.002Zm3.8-5.634a1.184 1.184 0 0 1-1.145-.867L4.575 2.364H1.182a1.182 1.182 0 0 1 0-2.364h4.281a1.183 1.183 0 0 1 1.144.868l4.833 17.455h13.178L29 8.275h-14.6a1.183 1.183 0 1 1 0-2.365h16.413a1.178 1.178 0 0 1 .986.533 1.191 1.191 0 0 1 .1 1.122l-5.405 12.412a1.185 1.185 0 0 1-1.084.709H10.553Z"
@@ -182,7 +185,8 @@
             </div>
         </div>
 
-        <div class="catalogSection__Card"><img src="./img/img6.webp" alt="Photo">
+        <div class="catalogSection__Card catalogSection__hide">
+            <img src="./img/img6.webp" alt="Photo">
             <div class="catalogSection__card-darkness">
                 <button><svg width="32" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -201,31 +205,31 @@
             </div>
         </div>
     </div>
-    <section class="form-section"></section>
-    <div class="form-section__background-image">
-        <div class="form-section__form-darkness">
-            <div class="form-section__left-side">
-                <img src="./img/faceForm.webp" alt="Image">
-                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
-            </div>
-            <div class="form-section__right-side">
-                <div>
-                    <h1>
-                        SUBSCRIBE
-                    </h1>
-                    <h2>
-                        FOR OUR NEW LETTER AND PROMOTION
-                    </h2>
+    <section class="form-section">
+        <div class="form-section__background-image">
+            <div class="form-section__form-darkness">
+                <div class="form-section__left-side">
+                    <img src="./img/faceForm.webp" alt="Image">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
                 </div>
-                <div class="form-section__form">
-                    <form>
-                        <input type="email" placeholder="Enter Your Email">
-                    </form>
-                    <button>Subscribe</button>
+                <div class="form-section__right-side">
+                    <div>
+                        <h1>
+                            SUBSCRIBE
+                        </h1>
+                        <h2>
+                            FOR OUR NEW LETTER AND PROMOTION
+                        </h2>
+                    </div>
+                    <div class="form-section__form">
+                        <form>
+                            <input type="email" placeholder="Enter Your Email">
+                        </form>
+                        <button>Subscribe</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
     <footer class="footer">

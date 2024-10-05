@@ -14,7 +14,7 @@
 
 body {
     scroll-behavior: smooth;
-    font-family: var(--font-family);
+    font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -231,7 +231,7 @@ a {
         background: rgba(42, 42, 42, 0.15);
         @include flex-center;
         position: absolute;
-        top: 777 / 2;
+        top: calc(777px/2);
         left: 0;
 
     }
@@ -242,7 +242,7 @@ a {
         background: rgba(42, 42, 42, 0.15);
         @include flex-center;
         position: absolute;
-        top: 777 / 2;
+        top: calc(777px/2);
         right: 0;
     }
 }
@@ -298,11 +298,14 @@ a {
     }
 
     &__price {
+        display: block;
+        width: 642px;
         font-weight: 300;
         font-size: 24px;
         color: #ef5b70;
         text-align: center;
         padding-bottom: 65px;
+        border-bottom: 1px solid #EAEAEA;
     }
 
     &__sort {
@@ -384,7 +387,8 @@ a {
         top: 0;
         right: 0;
         bottom: 0;
-        left: 0;    }
+        left: 0;
+    }
 
     &__card-darkness button {
         @include flex-center;
@@ -395,11 +399,12 @@ a {
         font-size: 14px;
         border: 1px solid $whiteTextColor;
         gap: 11px;
-        padding: 13px;    }
+        padding: 13px;
+    }
 
     &__Card:hover &__card-darkness {
         display: flex;
-    
+
     }
 
     &__card-text {
@@ -411,6 +416,7 @@ a {
     }
 
     &__card-text h2 {
+        color: $blackTextColor;
         font-size: 13px;
         font-weight: 400;
     }
@@ -563,5 +569,389 @@ a {
 
     &__icon:hover path {
         fill: $whiteTextColor;
+    }
+}
+
+@media (max-width: 1600px) and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .menu {
+        width: 768px;
+        padding: 18px;
+
+        &__left-menu {
+            margin-left: 32px;
+        }
+
+        &__right-menu {
+            margin-right: 18px;
+        }
+
+        &__five-in-basket {
+            right: 37px;
+        }
+    }
+
+    .BreadCrumb {
+        width: 768px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 60px 16px;
+
+
+        &__menu-active {
+            width: 150px;
+        }
+
+        &__menu-active__all {
+            padding-top: 8px;
+        }
+
+        &__menu-heading {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+
+        &__menu-man {
+            height: 90px;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        &__menu-text {
+            font-size: 12px;
+        }
+
+        &__menu-list {
+            font-size: 10px;
+            display: flex;
+            gap: 5px;
+        }
+
+        &__menu-woman {
+            height: 100px;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        &__menu-kids {
+            height: 120px;
+            display: flex;
+            gap: 5px;
+        }
+    }
+
+    .main {
+        height: 624px;
+    }
+
+    .mainDescription {
+        top: 0;
+        width: 768px;
+    }
+
+    .description {
+
+        &__h2 {
+            font-weight: 400;
+        }
+
+    }
+
+    .catalogSection {
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        gap: 16px;
+        padding-left: 4px;
+        padding-right: 4px;
+
+        &__hide {
+            display: none;
+        }
+    }
+
+    .form-section {
+        width: 768px;
+        height: 614px;
+
+
+        &__form-darkness {
+            width: 768px;
+            height: 614px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 48px;
+            padding: 64px 105px;
+        }
+
+        &__right-side {
+            height: 137px;
+            display: flex;
+            gap: 27px;
+        }
+
+        &__right-side h1 {
+            line-height: 162%;
+        }
+    }
+
+    .footer {
+        width: 768px;
+        padding: 30px 32px;
+
+
+        &__left-side {
+            width: 251px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+
+    .menu {
+        width: 375px;
+        padding: 18px 16px;
+
+        &__hide-button {
+            display: none;
+        }
+
+        &__hide-button svg {
+            display: none;
+        }
+
+        &__left-menu {
+            margin-left: 0;
+            gap: 0;
+        }
+
+        &__right-menu {
+            margin-right: 0;
+            width: 32px;
+        }
+
+        &__five-in-basket {
+            display: none;
+        }
+    }
+
+    .BreadCrumb {
+        display: grid;
+        padding: 24px 83px;
+
+        &__menu-active {
+            width: 180px;
+        }
+
+        &__menu-active__all {
+            padding-top: 8px;
+        }
+
+        &__menu-heading {
+            margin-bottom: 8px;
+            font-size: 10px;
+        }
+
+        &__menu-man {
+            height: 60px;
+            display: flex;
+            gap: 3px;
+            margin-bottom: 5;
+        }
+
+        &__menu-text {
+            font-size: 10px;
+        }
+
+        &__menu-list {
+            font-size: 10px;
+            display: flex;
+            gap: 3px;
+        }
+
+        &__menu-woman {
+            height: 90px;
+            display: flex;
+            gap: 3px;
+            margin-bottom: 5px;
+        }
+
+        &__menu-kids {
+            height: 110px;
+            display: flex;
+            gap: 3px;
+        }
+
+        &__heading {
+            display: block;
+            padding-left: 19px;
+            padding-bottom: 0;
+        }
+
+        &__links {
+            width: 209px;
+        }
+
+        &__link {
+            font-weight: 300;
+
+        }
+
+
+        &__box:not(:last-child)::after {
+            content: '/';
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    }
+
+    .main {
+        height: 624px;
+
+        &__leftArrow {
+            top: calc(624px/2);
+        }
+
+        &__rightArrow {
+            top: calc(624px/2);
+        }
+    }
+
+    .mainDescription {
+        top: 0;
+        width: 375px;
+        margin-bottom: 64px;
+    }
+
+    .description {
+        &__h2 {
+            padding-bottom: 32px;
+        }
+
+        &__p {
+            width: 326px;
+            height: 105px;
+            line-height: 143%;
+        }
+
+        &__price {
+            line-height: 130%;
+            padding-bottom: 32px;
+            width: 175px;
+        }
+
+        &__sort {
+            padding-left: 13px;
+            padding-top: 49px;
+            width: 304px;
+            font-size: 10px;
+            padding-bottom: 65px;
+        }
+
+        &__button {
+            margin-bottom: 64px;
+        }
+    }
+
+    .catalogSection {
+        width: 375px;
+        padding-left: 4px;
+        padding-right: 4px;
+        @include flex-column;
+        gap: 0;
+        margin-bottom: 64px;
+
+        &__hide-mobile {
+            display: none;
+        }
+
+        &__Card {
+            font-weight: 300;
+            height: 579px;
+        }
+    }
+
+    .form-section {
+        width: 375px;
+        height: 550px;
+
+        &__form-darkness {
+            width: 375px;
+            height: 550px;
+            @include flex-center();
+            flex-wrap: wrap;
+            gap: 59px;
+            padding: 64px 17px;
+            background-size: cover;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fbfbfb;
+        }
+
+        &__left-side {
+            width: 343px;
+            height: 194px;
+            display: flex;
+            gap: 29px;
+        }
+
+        &__left-side p {
+            font-size: 18px;
+        }
+
+        &__right-side {
+            width: 343px;
+            height: 124px;
+            @include flex-column();
+            justify-content: center;
+            gap: 22px;
+        }
+
+        &__right-side h1 {
+            line-height: 153%;
+        }
+
+        &__right-side h2 {
+            font-size: 14px;
+        }
+
+        &__form input {
+            height: 47px;
+        }
+
+        &__form button {
+            height: 47px;
+        }
+    }
+
+    .footer {
+        width: 375px;
+        height: 143px;
+        @include flex-center();
+        flex-wrap: wrap-reverse;
+        padding: 43px 62px 9px;
+        gap: 40px;
+
+        &__left-side {
+            width: 251px;
+            height: 19px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        &__right-side {
+            width: 147px;
+        }
     }
 }
